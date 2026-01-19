@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HIMOROGI - 九州の海と山。CLT・国産木材を活用した一棟貸し宿泊施設で、地域に眠る観光資源を巡りながら、暮らすように旅をする。">
+    <meta name="keywords" content="HIMOROGI, ヒモロギ, 一棟貸し, 宿泊, 九州, 唐津, CLT, 国産木材, 地域創生">
+    <title>HIMOROGI | この土地で、暮らすように旅をする</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                <div class="logo">
+                    <img src="images/logo-h-b.png" alt="HIMOROGI">
+                </div>
+            </a>
+
+            <nav class="header__nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#concept" class="nav__link">コンセプト</a></li>
+                    <li class="nav__item"><a href="facilities/index.html" class="nav__link">施設一覧</a></li>
+                    <li class="nav__item"><a href="#guide" class="nav__link">観光ガイド</a></li>
+                    <li class="nav__item"><a href="#reservation" class="nav__link">ご予約</a></li>
+                    <li class="nav__item"><a href="#news" class="nav__link">お知らせ</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+
+            <a href="#reservation" class="header__cta btn btn--primary">宿泊予約</a>
+
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- First View / Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <video src="videos/fv_dammydouga.mp4" class="hero__video" autoplay loop muted playsinline
+                poster="images/hero-karatsu.jpg"></video>
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__content">
+            <img src="images/logo-v-w.png" alt="HIMOROGI" class="hero__logo">
+            <p class="hero__catch">この土地で、<br>暮らすように旅をする</p>
+            <p class="hero__sub">九州の海と山。地域に眠る観光資源を巡りながら、<br>一回では終わらない旅へ。</p>
+        </div>
+
+        <div class="hero__scroll">
+            <span class="hero__scroll-text">SCROLL</span>
+            <span class="hero__scroll-line"></span>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities section section--dark" id="facilities">
+        <div class="facilities__bg-text" aria-hidden="true">FACILITIES</div>
+
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label section__label--light">Our Facilities</span>
+                <h2 class="section__title section__title--light">施設一覧</h2>
+            </header>
+
+            <div class="facilities__grid">
+                <!-- Facility Card 1 -->
+                <a href="facilities/karatsu-001.html" class="facility-card fade-in" data-area="saga">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-001.png" alt="KARATSU 001" class="facility-card__img">
+                        <span class="facility-card__status">COMING SOON</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">佐賀県 唐津市</span>
+                        <h3 class="facility-card__name">KARATSU 001</h3>
+                        <p class="facility-card__desc">海まで徒歩1分。唐津城を望む絶好のロケーションで、サウナとBBQを楽しめる一棟貸し施設。</p>
+                    </div>
+                </a>
+
+                <!-- Facility Card 2 -->
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-002.png" alt="KARATSU 002" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">佐賀県 唐津市</span>
+                        <h3 class="facility-card__name">KARATSU 002</h3>
+                        <p class="facility-card__desc">トレーラーハウスタイプ。自然の中で気軽にアウトドア体験を楽しめます。</p>
+                    </div>
+                </article>
+
+                <!-- Facility Card 3 -->
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-003.png" alt="KARATSU 003" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">佐賀県 唐津市</span>
+                        <h3 class="facility-card__name">KARATSU 003</h3>
+                        <p class="facility-card__desc">三角屋根プラン。CLTに大屋根を被せた開放的な空間で最大4名様まで宿泊可能。</p>
+                    </div>
+                </article>
+
+                <!-- Facility Card 4-9 (Placeholder) -->
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-004.png" alt="HAKATA 001" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">福岡県 福岡市</span>
+                        <h3 class="facility-card__name">HAKATA 001</h3>
+                        <p class="facility-card__desc">博多エリアに展開予定のCLT施設。都市と自然が融合した新しい滞在体験を。</p>
+                    </div>
+                </article>
+
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-005.png" alt="HAKATA 002" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">福岡県 福岡市</span>
+                        <h3 class="facility-card__name">HAKATA 002</h3>
+                        <p class="facility-card__desc">博多エリア第2弾。アクセス良好な立地で観光の拠点に最適。</p>
+                    </div>
+                </article>
+
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-006.png" alt="HAKATA 003" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">福岡県 福岡市</span>
+                        <h3 class="facility-card__name">HAKATA 003</h3>
+                        <p class="facility-card__desc">博多エリア第3弾。グループ旅行に最適な広々とした空間。</p>
+                    </div>
+                </article>
+
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-007.png" alt="ITOSHIMA 001" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">福岡県 糸島市</span>
+                        <h3 class="facility-card__name">ITOSHIMA 001</h3>
+                        <p class="facility-card__desc">糸島の美しい海を望むトレーラーハウス。サンセットの絶景を独り占め。</p>
+                    </div>
+                </article>
+
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-008.png" alt="Coming Soon" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">Coming Soon</span>
+                        <h3 class="facility-card__name">新施設準備中</h3>
+                        <p class="facility-card__desc">九州各地に、新しいHIMOROGI施設を準備中です。</p>
+                    </div>
+                </article>
+
+                <article class="facility-card fade-in">
+                    <div class="facility-card__img-wrap">
+                        <img src="images/facility-009.png" alt="Coming Soon" class="facility-card__img">
+                        <span class="facility-card__status">準備中</span>
+                    </div>
+                    <div class="facility-card__body">
+                        <span class="facility-card__area">Coming Soon</span>
+                        <h3 class="facility-card__name">新施設準備中</h3>
+                        <p class="facility-card__desc">山間部にも展開予定。四季折々の自然を体感できる施設をお届けします。</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section__footer fade-in">
+                <a href="facilities/index.html" class="btn btn--outline-light">すべての施設を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept section" id="concept">
+        <div class="concept__bg-text" aria-hidden="true">CONCEPT</div>
+
+        <div class="container">
+            <header class="section__header fade-in">
+                <span class="section__label">About HIMOROGI</span>
+                <h2 class="section__title">HIMOROGIについて</h2>
+            </header>
+
+            <div class="concept__layout">
+                <!-- Left Column -->
+                <div class="concept__left">
+
+                    <div class="concept__img concept__img--small fade-in">
+                        <img src="images/concept-interior.jpg" alt="HIMOROGI内観">
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="concept__right">
+                    <div class="concept__img concept__img--large fade-in">
+                        <img src="images/concept-landscape.jpg" alt="地域の風景">
+                    </div>
+
+                    <div class="concept__content fade-in">
+                        <h3 class="concept__subtitle">
+                            暮らしの中で気づく何気ない日々の美しさと<br>
+                            地域、旅人、すべてをつなぐ。
+                        </h3>
+                        <p class="concept__text">
+                            CLT・国産木材を活用した持続可能な建築と、地域に眠る観光資源の再発見。HIMOROGIは、その土地ならではの魅力あるロケーションで、環境に配慮しながら地域の人々と共に新たな価値を創り出しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section__footer fade-in">
+                <a href="/about/" class="btn btn--outline">詳しく見る</a>
+            </div>
+        </div>
+        <!-- Infinite Slider -->
+        <div class="guide-slider">
+            <div class="guide-slider__track">
+                <!-- Original Images (7 total) -->
+                <img src="images/slider-01.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-02.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-03.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-04.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-05.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-06.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-07.jpg" alt="" class="guide-slider__img">
+
+                <!-- Duplicate Images for Loop -->
+                <img src="images/slider-01.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-02.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-03.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-04.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-05.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-06.jpg" alt="" class="guide-slider__img">
+                <img src="images/slider-07.jpg" alt="" class="guide-slider__img">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide section" id="guide">
+
+        <div class="guide__bg-text" aria-hidden="true">GUIDE</div>
+
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label">Local Guide</span>
+                <h2 class="section__title">観光ガイド</h2>
+                <p class="section__desc">HIMOROGIがある地域の観光情報をご紹介します。<br>地域に眠る魅力的なスポットを巡る旅へ。</p>
+            </header>
+
+            <div class="guide__cards">
+                <a href="/guide/fukuoka/" class="guide-card fade-in">
+                    <div class="guide-card__img-wrap">
+                        <img src="images/guide-fukuoka.png" alt="福岡県" class="guide-card__img">
+                    </div>
+                    <div class="guide-card__overlay"></div>
+                    <div class="guide-card__content">
+                        <span class="guide-card__label">Fukuoka</span>
+                        <h3 class="guide-card__title">福岡県</h3>
+                        <span class="guide-card__arrow">→</span>
+                    </div>
+                </a>
+
+                <a href="/guide/saga/" class="guide-card fade-in">
+                    <div class="guide-card__img-wrap">
+                        <img src="images/guide-saga.jpg" alt="佐賀県" class="guide-card__img">
+                    </div>
+                    <div class="guide-card__overlay"></div>
+                    <div class="guide-card__content">
+                        <span class="guide-card__label">Saga</span>
+                        <h3 class="guide-card__title">佐賀県</h3>
+                        <span class="guide-card__arrow">→</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation section section--accent" id="reservation">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label">How to Book</span>
+                <h2 class="section__title">ご予約について</h2>
+                <p class="section__desc">HIMOROGIでは、スムーズな無人チェックインシステムを導入しています。</p>
+            </header>
+
+            <div class="reservation__flow fade-in">
+                <div class="flow-step">
+                    <div class="flow-step__num">01</div>
+                    <div class="flow-step__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="flow-step__title">サイトで予約</h3>
+                    <p class="flow-step__desc">ご希望の施設・日程を選択してご予約ください。</p>
+                </div>
+
+                <div class="flow-step__arrow">→</div>
+
+                <div class="flow-step">
+                    <div class="flow-step__num">02</div>
+                    <div class="flow-step__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="flow-step__title">事前チェックイン</h3>
+                    <p class="flow-step__desc">メールでご案内する事前登録を完了してください。</p>
+                </div>
+
+                <div class="flow-step__arrow">→</div>
+
+                <div class="flow-step">
+                    <div class="flow-step__num">03</div>
+                    <div class="flow-step__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="flow-step__title">現地でチェックイン</h3>
+                    <p class="flow-step__desc">タブレットで本人確認を行います。</p>
+                </div>
+
+                <div class="flow-step__arrow">→</div>
+
+                <div class="flow-step">
+                    <div class="flow-step__num">04</div>
+                    <div class="flow-step__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="flow-step__title">鍵の発行</h3>
+                    <p class="flow-step__desc">認証完了後、お部屋の鍵が発行されます。</p>
+                </div>
+            </div>
+
+            <div class="section__footer fade-in">
+                <a href="https://airhost.jp/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn--primary btn--lg">
+                    宿泊予約はこちら
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news section" id="news">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label">News</span>
+                <h2 class="section__title">お知らせ</h2>
+            </header>
+
+            <ul class="news__list fade-in">
+                <li class="news__item">
+                    <a href="/news/001/" class="news__link">
+                        <time class="news__date" datetime="2026-01-07">2026.01.07</time>
+                        <span class="news__category">お知らせ</span>
+                        <span class="news__title">HIMOROGI公式サイトをオープンしました</span>
+                    </a>
+                </li>
+                <li class="news__item">
+                    <a href="/news/002/" class="news__link">
+                        <time class="news__date" datetime="2026-01-01">2026.01.01</time>
+                        <span class="news__category">施設情報</span>
+                        <span class="news__title">HIMOROGI KARATSU 001 が間もなくオープン予定</span>
+                    </a>
+                </li>
+                <li class="news__item">
+                    <a href="/news/003/" class="news__link">
+                        <time class="news__date" datetime="2025-12-15">2025.12.15</time>
+                        <span class="news__category">お知らせ</span>
+                        <span class="news__title">公式Instagram・TikTokアカウントを開設しました</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="section__footer fade-in">
+                <a href="/news/" class="btn btn--outline">すべてのお知らせを見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section section--dark" id="contact">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label section__label--light">Contact</span>
+                <h2 class="section__title section__title--light">お問い合わせ</h2>
+                <p class="section__desc section__desc--light">
+                    ご質問・ご相談がございましたら、<br>お気軽にお問い合わせください。
+                </p>
+            </header>
+
+            <div class="section__footer fade-in">
+                <a href="/contact/" class="btn btn--outline-light btn--lg">お問い合わせフォームへ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo logo--light">
+                            <img src="images/logo-h-w.png" alt="HIMOROGI">
+                        </div>
+                    </a>
+                    <p class="footer__tagline">この土地で、暮らすように旅をする</p>
+                </div>
+
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="#concept">コンセプト</a></li>
+                        <li><a href="facilities/index.html">施設一覧</a></li>
+                        <li><a href="#guide">観光ガイド</a></li>
+                        <li><a href="#reservation">ご予約</a></li>
+                        <li><a href="#news">お知らせ</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__sns">
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__sns-link"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" class="footer__sns-link"
+                        aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <ul class="footer__links">
+                    <li><a href="/privacy/">プライバシーポリシー</a></li>
+                    <li><a href="/terms/">利用規約</a></li>
+                    <li><a href="/company/">運営会社</a></li>
+                </ul>
+                <p class="footer__copyright">© 2026 HIMOROGI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
