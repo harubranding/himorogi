@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HIMOROGIの施設一覧。佐賀・福岡の各エリアにある、地域の魅力を体感できる一棟貸し施設をご紹介します。">
+    <title>施設一覧 | HIMOROGI</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header--solid" id="header">
+        <div class="header__inner">
+            <a href="../index.html" class="header__logo">
+                <div class="logo">
+                    <img src="../images/logo-h-b.png" alt="HIMOROGI">
+                </div>
+            </a>
+
+            <nav class="header__nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html#concept" class="nav__link">コンセプト</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">施設一覧</a></li>
+                    <li class="nav__item"><a href="../index.html#guide" class="nav__link">観光ガイド</a></li>
+                    <li class="nav__item"><a href="../index.html#reservation" class="nav__link">ご予約</a></li>
+                    <li class="nav__item"><a href="../index.html#news" class="nav__link">お知らせ</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+
+            <a href="../#reservation" class="header__cta btn btn--primary">宿泊予約</a>
+
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">施設一覧</h1>
+            </div>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="filter-nav">
+            <div class="container align-center">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="saga">SAGA</button>
+                    <button class="filter-btn" data-filter="fukuoka">FUKUOKA</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Facilities Grid -->
+        <section class="section section--dark" style="padding-top: var(--space-xl);">
+            <div class="container">
+                <div class="facilities__grid" id="facilities-grid">
+                    <!-- Facility Card 1 (Saga) -->
+                    <a href="karatsu-001.html" class="facility-card fade-in" data-area="saga">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-001.png" alt="HIMOROGI KARATSU 001" class="facility-card__img">
+                            <span class="facility-card__status">COMING SOON</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">佐賀県 唐津市</span>
+                            <h3 class="facility-card__name">HIMOROGI KARATSU 001</h3>
+                            <p class="facility-card__desc">海まで徒歩1分。唐津城を望む絶好のロケーションで、サウナとBBQを楽しめる一棟貸し施設。</p>
+                        </div>
+                    </a>
+
+                    <!-- Facility Card 2 (Saga) -->
+                    <article class="facility-card fade-in" data-area="saga">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-002.png" alt="HIMOROGI KARATSU 002" class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">佐賀県 唐津市</span>
+                            <h3 class="facility-card__name">HIMOROGI KARATSU 002</h3>
+                            <p class="facility-card__desc">トレーラーハウスタイプ。自然の中で気軽にアウトドア体験を楽しめます。</p>
+                        </div>
+                    </article>
+
+                    <!-- Facility Card 3 (Saga) -->
+                    <article class="facility-card fade-in" data-area="saga">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-003.png" alt="HIMOROGI KARATSU 003" class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">佐賀県 唐津市</span>
+                            <h3 class="facility-card__name">HIMOROGI KARATSU 003</h3>
+                            <p class="facility-card__desc">三角屋根プラン。CLTに大屋根を被せた開放的な空間で最大4名様まで宿泊可能。</p>
+                        </div>
+                    </article>
+
+                    <!-- Facility Card 4 (Fukuoka) -->
+                    <article class="facility-card fade-in" data-area="fukuoka">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-004.png" alt="HIMOROGI HAKATA 001" class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">福岡県 福岡市</span>
+                            <h3 class="facility-card__name">HIMOROGI HAKATA 001</h3>
+                            <p class="facility-card__desc">博多エリアに展開予定のCLT施設。都市と自然が融合した新しい滞在体験を。</p>
+                        </div>
+                    </article>
+
+                    <!-- Facility Card 5 (Fukuoka) -->
+                    <article class="facility-card fade-in" data-area="fukuoka">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-005.png" alt="HIMOROGI HAKATA 002" class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">福岡県 福岡市</span>
+                            <h3 class="facility-card__name">HIMOROGI HAKATA 002</h3>
+                            <p class="facility-card__desc">博多エリア第2弾。アクセス良好な立地で観光の拠点に最適。</p>
+                        </div>
+                    </article>
+
+                    <!-- Facility Card 6 (Fukuoka) -->
+                    <article class="facility-card fade-in" data-area="fukuoka">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-006.png" alt="HIMOROGI HAKATA 003" class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">福岡県 福岡市</span>
+                            <h3 class="facility-card__name">HIMOROGI HAKATA 003</h3>
+                            <p class="facility-card__desc">博多エリア第3弾。グループ旅行に最適な広々とした空間。</p>
+                        </div>
+                    </article>
+
+                    <!-- Facility Card 7 (Fukuoka) -->
+                    <article class="facility-card fade-in" data-area="fukuoka">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-007.png" alt="HIMOROGI ITOSHIMA 001"
+                                class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">福岡県 糸島市</span>
+                            <h3 class="facility-card__name">HIMOROGI ITOSHIMA 001</h3>
+                            <p class="facility-card__desc">糸島の美しい海を望むトレーラーハウス。サンセットの絶景を独り占め。</p>
+                        </div>
+                    </article>
+
+                    <!-- Facility Card 8 (Saga/Fukuoka Undefined - Setting as Saga for now or Others) -->
+                    <article class="facility-card fade-in" data-area="saga">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-008.png" alt="Coming Soon" class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">Coming Soon</span>
+                            <h3 class="facility-card__name">新施設準備中</h3>
+                            <p class="facility-card__desc">九州各地に、新しいHIMOROGI施設を準備中です。</p>
+                        </div>
+                    </article>
+
+                    <!-- Facility Card 9 (Saga/Fukuoka Undefined - Setting as Saga for now or Others) -->
+                    <article class="facility-card fade-in" data-area="fukuoka">
+                        <div class="facility-card__img-wrap">
+                            <img src="../images/facility-009.png" alt="Coming Soon" class="facility-card__img">
+                            <span class="facility-card__status">準備中</span>
+                        </div>
+                        <div class="facility-card__body">
+                            <span class="facility-card__area">Coming Soon</span>
+                            <h3 class="facility-card__name">新施設準備中</h3>
+                            <p class="facility-card__desc">山間部にも展開予定。四季折々の自然を体感できる施設をお届けします。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section section--dark" id="contact"
+            style="background-image: url('../images/contact-bg.png');">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__label section__label--light">Contact</span>
+                    <h2 class="section__title section__title--light">お問い合わせ</h2>
+                    <p class="section__desc section__desc--light">
+                        ご質問・ご相談がございましたら、<br>お気軽にお問い合わせください。
+                    </p>
+                </header>
+
+                <div class="section__footer fade-in">
+                    <a href="/contact/" class="btn btn--outline-light btn--lg">お問い合わせフォームへ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo">
+                        <div class="logo logo--light">
+                            <img src="../images/logo-h-w.png" alt="HIMOROGI">
+                        </div>
+                    </a>
+                    <p class="footer__tagline">この土地で、暮らすように旅をする</p>
+                </div>
+
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="../index.html#concept">コンセプト</a></li>
+                        <li><a href="index.html">施設一覧</a></li>
+                        <li><a href="../index.html#guide">観光ガイド</a></li>
+                        <li><a href="../index.html#reservation">ご予約</a></li>
+                        <li><a href="../index.html#news">お知らせ</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__sns">
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__sns-link"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" class="footer__sns-link"
+                        aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <ul class="footer__links">
+                    <li><a href="/privacy/">プライバシーポリシー</a></li>
+                    <li><a href="/terms/">利用規約</a></li>
+                    <li><a href="/company/">運営会社</a></li>
+                </ul>
+                <p class="footer__copyright">© 2026 HIMOROGI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Simple Filter Script
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.facility-card');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    buttons.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.dataset.area === filter) {
+                            card.style.display = 'block';
+                            // Add fade-in animation reset if needed
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="../main.js"></script>
+</body>
+
+</html>
