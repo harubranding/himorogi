@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initSmoothScroll();
     initHamburgerMenu();
+    initAccordion();
 });
 
 /**
@@ -198,3 +199,19 @@ function initParallax() {
 window.addEventListener('load', () => {
     initParallax();
 });
+
+/**
+ * Q&A Accordion
+ */
+function initAccordion() {
+    const questions = document.querySelectorAll('.qa-question');
+    
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.closest('.qa-item');
+            if (item) {
+                item.classList.toggle('is-open');
+            }
+        });
+    });
+}
