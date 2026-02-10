@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="唐津の観光ガイド - 海と城下町、旬の味。唐津の" ちょうどいい"を巡る観光・グルメ・体験スポットをご紹介します。">
+    <title>唐津の観光ガイド | HIMOROGI</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-guide">
+    <!-- Header -->
+    <header class="header header--solid" id="header">
+        <div class="header__inner">
+            <a href="../index.html" class="header__logo">
+                <div class="logo">
+                    <img src="../images/logo-h-b.png" alt="HIMOROGI">
+                </div>
+            </a>
+
+            <nav class="header__nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../about/index.html" class="nav__link">コンセプト</a></li>
+                    <li class="nav__item"><a href="../facilities/index.html" class="nav__link">施設一覧</a></li>
+                    <li class="nav__item">
+                        <span class="nav__link">観光ガイド</span>
+                        <div class="nav__dropdown">
+                            <a href="karatsu.html" class="nav__dropdown-link">佐賀県</a>
+                        </div>
+                    </li>
+                    <li class="nav__item"><a href="../index.html#reservation" class="nav__link">ご予約</a></li>
+                    <li class="nav__item"><a href="../index.html#news" class="nav__link">お知らせ</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+
+            <a href="../#reservation" class="header__cta btn btn--primary">宿泊予約</a>
+
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="detail-hero">
+            <div class="detail-hero__bg">
+                <img src="../images/guide-karatsu-hero.jpg" alt="唐津の風景">
+            </div>
+            <div class="detail-hero__content">
+                <div class="container">
+                    <span class="detail-hero__label fade-in">佐賀県 唐津市</span>
+                    <h1 class="detail-hero__title fade-in">唐津の観光ガイド</h1>
+                    <nav class="detail-hero__nav fade-in">
+                        <a href="#summary" class="detail-hero__nav-btn">まとめ</a>
+                        <a href="#sightseeing" class="detail-hero__nav-btn">観光</a>
+                        <a href="#gourmet" class="detail-hero__nav-btn">グルメ</a>
+                        <a href="#experience" class="detail-hero__nav-btn">体験</a>
+                        <a href="#map" class="detail-hero__nav-btn">地図</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="section guide-summary" id="summary">
+            <div class="container">
+                <header class="section__header fade-in">
+                    <h2 class="section__title">海と城下町、旬の味。唐津の"ちょうどいい"を巡る</h2>
+                </header>
+                <div class="guide-summary__content fade-in">
+                    <p class="guide-summary__intro">
+                        玄界灘に面した城下町・唐津は、歴史と自然、そして美食が揃う九州屈指の観光エリアです。<br>
+                        HIMOROGIを拠点に、のんびりと唐津の魅力を巡ってみませんか。
+                    </p>
+                    <ul class="guide-summary__list">
+                        <li>
+                            <span class="guide-summary__icon material-symbols-outlined">schedule</span>
+                            <span><strong>滞在目安：</strong>1泊2日〜2泊3日がおすすめ</span>
+                        </li>
+                        <li>
+                            <span class="guide-summary__icon material-symbols-outlined">directions_car</span>
+                            <span><strong>移動手段：</strong>車があると便利。主要スポットは施設から15分圏内</span>
+                        </li>
+                        <li>
+                            <span class="guide-summary__icon material-symbols-outlined">restaurant</span>
+                            <span><strong>食事について：</strong>朝市や周辺の海鮮・佐賀牛を楽しめます</span>
+                        </li>
+                        <li>
+                            <span class="guide-summary__icon material-symbols-outlined">wb_sunny</span>
+                            <span><strong>ベストシーズン：</strong>春の桜、秋の唐津くんちが特におすすめ</span>
+                        </li>
+                        <li>
+                            <span class="guide-summary__icon material-symbols-outlined">family_restroom</span>
+                            <span><strong>お子様連れ：</strong>海水浴や体験スポットも充実</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sightseeing Section -->
+        <section class="section guide-category" id="sightseeing">
+            <div class="container">
+                <header class="section__header fade-in">
+                    <span class="section__label">Sightseeing</span>
+                    <h2 class="section__title">観光スポット</h2>
+                </header>
+                <div class="spot-cards">
+                    <!-- Card 1 -->
+                    <article class="spot-card fade-in">
+                        <span class="recommend-badge">おすすめ</span>
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-karatsujo.jpg" alt="唐津城">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">唐津城</h3>
+                            <p class="spot-card__text">別名「舞鶴城」。天守閣からの玄界灘の眺望は圧巻です。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約20分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#定番</span>
+                                <span class="spot-card__tag">#眺望</span>
+                            </div>
+                            <a href="https://example.com/karatsu-castle" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-nijinomatsubara.jpg" alt="虹の松原">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">虹の松原</h3>
+                            <p class="spot-card__text">約100万本の松が5kmに渡って続く日本三大松原のひとつ。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約10分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#自然</span>
+                                <span class="spot-card__tag">#ドライブ</span>
+                            </div>
+                            <a href="https://example.com/nijinomatsubara" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-hikiyama.jpg" alt="曳山展示場">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">曳山展示場</h3>
+                            <p class="spot-card__text">ユネスコ無形文化遺産「唐津くんち」の曳山14台を常設展示。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約20分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#文化</span>
+                                <span class="spot-card__tag">#雨の日</span>
+                            </div>
+                            <a href="https://example.com/hikiyama" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gourmet Section -->
+        <section class="section guide-category" id="gourmet">
+            <div class="container">
+                <header class="section__header fade-in">
+                    <span class="section__label">Gourmet</span>
+                    <h2 class="section__title">グルメスポット</h2>
+                </header>
+                <div class="spot-cards">
+                    <!-- Card 1 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-yobukoika.jpg" alt="呼子の朝市">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">呼子の朝市</h3>
+                            <p class="spot-card__text">日本三大朝市のひとつ。新鮮なイカや海産物が並びます。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約40分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#海鮮</span>
+                                <span class="spot-card__tag">#朝活</span>
+                            </div>
+                            <a href="https://example.com/yobuko-asaichi" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-sagagyu.jpg" alt="佐賀牛">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">佐賀牛レストラン</h3>
+                            <p class="spot-card__text">きめ細やかな霜降りが特徴の佐賀牛を堪能できる名店。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約10分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#肉</span>
+                                <span class="spot-card__tag">#予約推奨</span>
+                            </div>
+                            <a href="https://example.com/sagagyu" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-ikashumai.jpg" alt="いかしゅうまい">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">いかしゅうまい</h3>
+                            <p class="spot-card__text">呼子名物のいかを贅沢に使った、ふわふわ食感の唐津を代表するグルメ。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約40分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#名物</span>
+                                <span class="spot-card__tag">#お土産</span>
+                            </div>
+                            <a href="https://example.com/ika-shumai" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section guide-category" id="experience">
+            <div class="container">
+                <header class="section__header fade-in">
+                    <span class="section__label">Experience</span>
+                    <h2 class="section__title">体験スポット</h2>
+                </header>
+                <div class="spot-cards">
+                    <!-- Card 1 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-karatsuyaki.jpg" alt="唐津焼体験">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">唐津焼 絵付け体験</h3>
+                            <p class="spot-card__text">400年の歴史を持つ唐津焼の窯元で手軽に絵付け体験。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約15分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#文化体験</span>
+                                <span class="spot-card__tag">#雨の日</span>
+                            </div>
+                            <a href="https://example.com/karatsuyaki" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-karatsukunchi.jpg" alt="唐津くんち">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">唐津くんち</h3>
+                            <p class="spot-card__text">毎年11月に行われるユネスコ無形文化遺産の祭り。豪華絢爛な曳山が街を練り歩きます。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約20分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#祭り</span>
+                                <span class="spot-card__tag">#秋</span>
+                            </div>
+                            <a href="https://example.com/karatsu-kunchi" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="spot-card fade-in">
+                        <div class="spot-card__image">
+                            <img src="../images/guide-karatsu-nanatsugama.jpg" alt="七ツ釜クルーズ">
+                        </div>
+                        <div class="spot-card__body">
+                            <h3 class="spot-card__name">七ツ釜 遊覧船</h3>
+                            <p class="spot-card__text">国の天然記念物・七ツ釜を海から間近に見る遊覧船。</p>
+                            <div class="spot-card__access">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                <span>車で約45分</span>
+                            </div>
+                            <div class="spot-card__tags">
+                                <span class="spot-card__tag">#絶景</span>
+                                <span class="spot-card__tag">#子連れ</span>
+                            </div>
+                            <a href="https://example.com/nanatsugama" target="_blank" rel="noopener noreferrer"
+                                class="spot-card__btn">公式サイト →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section guide-map" id="map">
+            <div class="container">
+                <header class="section__header fade-in">
+                    <span class="section__label">Map</span>
+                    <h2 class="section__title">アクセスマップ</h2>
+                </header>
+                <div class="guide-map__wrap fade-in">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53088.96744807567!2d129.91!3d33.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35672df3ccc56f4f%3A0x9c0f4e6c1a1b5000!2z5ZSQ5rSl5Z-O!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section section--dark" id="contact">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__label section__label--light">Contact</span>
+                    <h2 class="section__title section__title--light">お問い合わせ</h2>
+                    <p class="section__desc section__desc--light">
+                        ご質問・ご相談がございましたら、<br>お気軽にお問い合わせください。
+                    </p>
+                </header>
+
+                <div class="section__footer fade-in">
+                    <a href="/contact/" class="btn btn--outline-light btn--lg">お問い合わせフォームへ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo">
+                        <div class="logo logo--light">
+                            <img src="../images/logo-h-w.png" alt="HIMOROGI">
+                        </div>
+                    </a>
+                    <p class="footer__tagline">この土地で、暮らすように旅をする</p>
+                </div>
+
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li><a href="../about/index.html">コンセプト</a></li>
+                        <li><a href="../facilities/index.html">施設一覧</a></li>
+                        <li><a href="../index.html#guide">観光ガイド</a></li>
+                        <li><a href="../index.html#reservation">ご予約</a></li>
+                        <li><a href="../index.html#news">お知らせ</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__sns">
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__sns-link"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <ul class="footer__links">
+                    <li><a href="/privacy/">プライバシーポリシー</a></li>
+                    <li><a href="/terms/">利用規約</a></li>
+                    <li><a href="/company/">運営会社</a></li>
+                </ul>
+                <p class="footer__copyright">© 2026 HIMOROGI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../main.js"></script>
+</body>
+
+</html>
