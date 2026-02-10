@@ -154,18 +154,22 @@ function initHamburgerMenu() {
 function openMobileMenu() {
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
+    const header = document.getElementById('header');
 
     hamburger?.classList.add('is-active');
     nav?.classList.add('is-active');
+    header?.classList.add('menu-open');
     document.body.style.overflow = 'hidden';
 }
 
 function closeMobileMenu() {
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
+    const header = document.getElementById('header');
 
     hamburger?.classList.remove('is-active');
     nav?.classList.remove('is-active');
+    header?.classList.remove('menu-open');
     document.body.style.overflow = '';
 }
 
@@ -183,11 +187,11 @@ function initParallax() {
             window.requestAnimationFrame(() => {
                 const scrolled = window.scrollY;
                 const rate = scrolled * 0.3;
-                
+
                 if (scrolled < window.innerHeight) {
                     heroImg.style.transform = `translateY(${rate}px) scale(1.1)`;
                 }
-                
+
                 ticking = false;
             });
             ticking = true;
@@ -205,7 +209,7 @@ window.addEventListener('load', () => {
  */
 function initAccordion() {
     const questions = document.querySelectorAll('.qa-question');
-    
+
     questions.forEach(question => {
         question.addEventListener('click', () => {
             const item = question.closest('.qa-item');
